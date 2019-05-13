@@ -2,12 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>AirBnB</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
+    <section class="kitchen">
+      <img src="images/kitchen.jpg" alt="kitchen">
+    </section>
+    <main>
+      <section class="description">
+        <h1>Quiet apartment</h1>
+        <a href="#" alt="Entire apartment">Entire apartment</a>
+        <p>
+          <span>4 guests</span>
+          <span>1 bed</span>
+          <span>1 bath</span>
+        </p>
+        <p class="text">City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <a href="#" alt="contact host">Contact host</a>
+      </section>
+      <section class="amenities">
+        <h3>Amenities</h3>
+        <table>
+          <tr>
+            <td>Elevator</td>
+            <td>Hair dryer</td>
+          </tr>
+          <tr>
+              <td>Washer</td>
+              <td>Kitchen</td>
+            </tr>
+        </table>
+        <a href="#" alt="all amenities">Show all amenities</a>
+      </section>
+      <section class="review">
+        <h2>Reviews</h2>
+        <section class="review_1">
+          <div class="person">
+            <div class="cycle"></div>
+            <div class="person_name">John</div>
+            <div class="review_date">September 2016</div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel quasi saepe architecto incidunt eius neque, dolores est ipsam, omnis amet sit consectetur dolor laborum!</p>
+        </section>
+        <section class="review_2">
+          <div class="person">
+            <div class="cycle"></div>
+            <div class="person_name">John</div>
+            <div class="review_date">September 2016</div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel quasi saepe architecto!</p>
+        </section>
+      </section>
+      <section class="hosted">
+        <h2>Hosted by Jane</h2>
+        <p>Budapest, Hungary</p>
+        <p class="host_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel quasi saepe architecto!</p>
+        <button>Contact host</button>
+      </section>
+      <form class="form" method="GET">
+        <p><span class="price">25</span>$ per night</p>
+        <input onfocus="(this.type='date')" placeholder="Date">
+        <input type="text" placeholder="Guests">
+        <button>Book</button>
+      </form>
+    </main>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
