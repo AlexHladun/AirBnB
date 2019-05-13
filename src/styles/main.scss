@@ -3,5 +3,221 @@
 @import "typography";
 
 body {
-  background: $c-gray;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.kitchen img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template: "desc form"    auto
+    "amenities ."    auto
+    "rev ."    auto
+    "host ."    auto/auto auto;
+  grid-gap: 0 80px;
+  padding-top: 39px;
+  font-family: "Avenir", sans-serif;
+
+  p {
+    width: 490px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  form {
+    grid-area: form;
+    padding: 30px 30px 38px;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    p {
+      width: 270px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3d4e61;
+      margin: 0 0 39px;
+    }
+
+    input {
+      display: block;
+      width: 270px;
+      height: 50px;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+      padding-left: 17px;
+    }
+
+    [type="date"]::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    button {
+      width: 270px;
+      height: 50px;
+      background: #fd5c63;
+      border-radius: 4px;
+      border: none;
+      color: #fff;
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    }
+  }
+
+  section.review {
+    grid-area: rev;
+    color: #3d4e61;
+    margin-top: 50px;
+    .review_1,
+    .review_2 {
+      margin-top: 35px;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 33px;
+      color: #3d4e61;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      color: #3d4d61;
+      margin-bottom: 0;
+    }
+    
+    .cycle {
+      width: 50px;
+      height: 50px;
+      background: #c4c4c4;
+      border-radius: 50%;
+      float: left;
+      margin-right: 21px;
+    }
+
+    .person_name {
+      font-size: 16px;
+      line-height: 18px;
+      color: #3d4e61;
+      font-weight: bold;
+    }
+
+    .review_date {
+      font-size: 20px;
+      line-height: 23px;
+      margin-top: 13px;
+    }
+  }
+
+  section.hosted {
+    grid-area: host;
+    margin-top: 80px;
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      color: #3d4e61;
+      margin: 0;
+    }
+    h2 + p {
+      font-size: 14px;
+      line-height: 16px;
+      color: #3d4e61;
+    }
+
+    .host_text {
+      font-size: 18px;
+      line-height: 26px;
+      color: #3d4e61;
+    }
+
+    button {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #118488;
+      box-sizing: border-box;
+      border-radius: 4px;
+      background: #fff;
+      color: #118488;
+    }
+  }
+
+  section.description {
+    grid-area: desc;
+
+    a[alt="Entire apartment"] {
+      color: #687c94;
+    }
+
+    a[alt="contact host"] {
+      color: #3d4e61;
+      font-weight: bold;
+    }
+
+    a[alt="Entire apartment"] + p {
+      margin-top: 20px;
+      span {
+        color: #3d4e61;
+        margin-right: 26px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #3d4e61;
+    margin: 0 0 20px;
+  }
+  
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3d4e61;
+    margin: 30px 0;
+  }
+    
+  section.amenities {
+    grid-area: amenities;
+    h3 {
+      margin: 40px 0 20px;
+      font-size: 20px;
+      line-height: 23px;
+      color: #3d4e61;
+    }
+    
+    table {
+      margin-bottom: 20px;
+      border-collapse: collapse;
+      
+      td {
+        width: 195px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+      }
+    }
+
+    a {
+      color: #3d4e61;
+      font-weight: bold;
+    }
+  }
 }
