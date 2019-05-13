@@ -135,6 +135,9 @@ main {
       border-radius: 4px;
       background: #fff;
       color: #118488; }
+      main section.hosted button:hover {
+        opacity: 0.9;
+        cursor: pointer; }
   main section.description {
     grid-area: desc; }
     main section.description a[alt="Entire apartment"] {
