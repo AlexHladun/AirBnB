@@ -1,6 +1,11 @@
-h1 {
-  font-family: "Avenir", sans-serif;
-  font-weight: bold; }
+p,
+h1,
+h2,
+td,
+span,
+.person_name,
+main .review_date {
+  color: #3d4e61; }
 
 @font-face {
   font-family: "Roboto";
@@ -58,7 +63,6 @@ main {
       width: 270px;
       font-size: 16px;
       line-height: 19px;
-      color: #3d4e61;
       margin: 0 0 39px; }
     main form input {
       display: block;
@@ -82,7 +86,6 @@ main {
         cursor: pointer; }
   main section.review {
     grid-area: rev;
-    color: #3d4e61;
     margin-top: 50px; }
     main section.review .review_1,
     main section.review .review_2 {
@@ -90,12 +93,10 @@ main {
     main section.review h2 {
       font-size: 28px;
       line-height: 33px;
-      color: #3d4e61;
       margin: 0; }
     main section.review p {
       font-size: 18px;
       line-height: 26px;
-      color: #3d4d61;
       margin-bottom: 0; }
     main section.review .cycle {
       width: 50px;
@@ -121,16 +122,13 @@ main {
       font-weight: bold;
       font-size: 28px;
       line-height: 33px;
-      color: #3d4e61;
       margin: 0; }
     main section.hosted h2 + p {
       font-size: 14px;
-      line-height: 16px;
-      color: #3d4e61; }
+      line-height: 16px; }
     main section.hosted .host_text {
       font-size: 18px;
-      line-height: 26px;
-      color: #3d4e61; }
+      line-height: 26px; }
     main section.hosted button {
       width: 150px;
       height: 50px;
@@ -153,17 +151,14 @@ main {
     main section.description a[alt="Entire apartment"] + p {
       margin-top: 20px; }
       main section.description a[alt="Entire apartment"] + p span {
-        color: #3d4e61;
         margin-right: 26px; }
   main h1 {
     font-size: 36px;
     line-height: 42px;
-    color: #3d4e61;
     margin: 0 0 20px; }
   main .text {
     font-size: 16px;
     line-height: 24px;
-    color: #3d4e61;
     margin: 30px 0; }
   main section.amenities {
     grid-area: amenities; }
@@ -179,8 +174,7 @@ main {
         width: 195px;
         height: 40px;
         font-size: 16px;
-        line-height: 19px;
-        color: #3d4e61; }
+        line-height: 19px; }
     main section.amenities a {
       color: #3d4e61;
       font-weight: bold; }
