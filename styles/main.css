@@ -23,14 +23,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
 .kitchen img {
-  width: 2000px;
-  min-width: 1440px; }
+  width: 100%; }
 
 main {
   display: grid;
@@ -186,7 +186,6 @@ main {
       font-weight: bold; }
 
 nav {
-  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 19px 0 26px;
@@ -194,9 +193,9 @@ nav {
   display: -ms-flexbox;
   display: flex;
   font-family: "Avenir", sans-serif;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 19px;
   font-size: 16px;
   -webkit-box-align: center;
@@ -206,15 +205,12 @@ nav {
   -webkit-box-shadow: 0 1px 0 #e1e7ed;
           box-shadow: 0 1px 0 #e1e7ed;
   height: 60px;
-  width: 2000px;
-  min-width: 1440px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0; }
   nav img[alt="airbnb-logo"] {
     height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 26px;
-    right: 1944px; }
+    width: 30px; }
   nav img[alt="headshot"] {
     height: 30px;
     width: 30px; }
@@ -236,8 +232,8 @@ nav {
 footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 2000px;
-  min-width: 1440px;
+  width: 100%;
+  min-width: 1200px;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   line-height: 19px;
