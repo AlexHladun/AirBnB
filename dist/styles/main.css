@@ -8,7 +8,93 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
+  margin: 0;
   background: #eee; }
+
+nav {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 19px 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir", sans-serif;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 19px;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 0 #e1e7ed;
+          box-shadow: 0 1px 0 #e1e7ed;
+  height: 60px;
+  width: 2000px;
+  min-width: 1440px; }
+  nav img[alt="airbnb-logo"] {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 26px;
+    right: 1944px; }
+  nav img[alt="headshot"] {
+    height: 30px;
+    width: 30px; }
+
+.nav_container {
+  width: 373px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #3d4e61;
+  font-weight: bold; }
+
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 2000px;
+  min-width: 1440px;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  height: 213px;
+  padding: 44px 25%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3d4e61; }
+  footer ul {
+    margin: 0;
+    width: 175px;
+    list-style: none;
+    padding: 0;
+    gap: 9px; }
+    footer ul li:not(.footer_ul-first-item) {
+      margin-bottom: 9px; }
+    footer ul .footer_ul-first-item {
+      font-weight: bold;
+      margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
