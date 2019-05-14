@@ -4,3 +4,8 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin img-size {
+  height: 30px;
+  width: 30px;
+}
