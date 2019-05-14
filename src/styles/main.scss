@@ -47,7 +47,6 @@ main {
       width: 270px;
       font-size: 16px;
       line-height: 19px;
-      color: #3d4e61;
       margin: 0 0 39px;
     }
 
@@ -80,7 +79,6 @@ main {
 
   section.review {
     grid-area: rev;
-    color: #3d4e61;
     margin-top: 50px;
     .review_1,
     .review_2 {
@@ -90,14 +88,12 @@ main {
     h2 {
       font-size: 28px;
       line-height: 33px;
-      color: #3d4e61;
       margin: 0;
     }
 
     p {
       font-size: 18px;
       line-height: 26px;
-      color: #3d4d61;
       margin-bottom: 0;
     }
     
@@ -132,19 +128,16 @@ main {
       font-weight: bold;
       font-size: 28px;
       line-height: 33px;
-      color: #3d4e61;
       margin: 0;
     }
     h2 + p {
       font-size: 14px;
       line-height: 16px;
-      color: #3d4e61;
     }
 
     .host_text {
       font-size: 18px;
       line-height: 26px;
-      color: #3d4e61;
     }
 
     button {
@@ -177,7 +170,6 @@ main {
     a[alt="Entire apartment"] + p {
       margin-top: 20px;
       span {
-        color: #3d4e61;
         margin-right: 26px;
       }
     }
@@ -186,14 +178,12 @@ main {
   h1 {
     font-size: 36px;
     line-height: 42px;
-    color: #3d4e61;
     margin: 0 0 20px;
   }
   
   .text {
     font-size: 16px;
     line-height: 24px;
-    color: #3d4e61;
     margin: 30px 0;
   }
     
@@ -215,7 +205,6 @@ main {
         height: 40px;
         font-size: 16px;
         line-height: 19px;
-        color: #3d4e61;
       }
     }
 
