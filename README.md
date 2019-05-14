@@ -1,4 +1,4 @@
-[Project site AirBnB](https://alexhladun.github.io/AirBnB/)
+[Project site AirBnB](https://alexhladun.github.io/AirBnB/index.html)
 
 
 # Base template for Gulp
