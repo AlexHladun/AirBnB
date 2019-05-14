@@ -14,6 +14,7 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+html,
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,18 +23,22 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
 .kitchen img {
-  width: 100%; }
+  width: 2000px;
+  min-width: 1440px; }
 
 main {
   display: grid;
-  grid-template: "desc form"    auto "amenities ."    auto "rev ."    auto "host ."    auto/auto auto;
+  grid-template: "desc form"    auto "amenities ."    auto "rev ."    auto "host ."    auto/auto auto;
   grid-gap: 0 80px;
   padding-top: 39px;
-  font-family: "Avenir", sans-serif; }
+  font-family: "Avenir", sans-serif;
+  margin-bottom: 75px; }
   main p {
     width: 490px; }
   main a {
@@ -202,7 +207,8 @@ nav {
           box-shadow: 0 1px 0 #e1e7ed;
   height: 60px;
   width: 2000px;
-  min-width: 1440px; }
+  min-width: 1440px;
+  margin: 0; }
   nav img[alt="airbnb-logo"] {
     height: 30px;
     width: 30px;
@@ -246,7 +252,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #3d4e61; }
+  color: #3d4e61;
+  margin: 0; }
   footer ul {
     margin: 0;
     width: 175px;
