@@ -12,8 +12,7 @@ body {
 }
 
 .kitchen img {
-  width: 2000px;
-  min-width: 1440px;
+  width: 100%;
 }
 
 main {
@@ -232,15 +231,14 @@ nav {
   background: #fff;
   box-shadow: 0 1px 0 #e1e7ed;
   height: 60px;
-  width: 2000px;
-  min-width: 1440px;
+  width: 100%;
   margin: 0;
 
   img[alt="airbnb-logo"] {
     @include img-size;
     position: absolute;
     left: 26px;
-    right: 1944px;
+    right: 200px;
   }
 
   img[alt="headshot"] {
@@ -261,14 +259,12 @@ nav {
 
 footer {
   box-sizing: border-box;
-  width: 2000px;
-  min-width: 1440px;
+  width: 100%;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   line-height: 19px;
   height: 213px;
-  padding: 44px 25%;
-  justify-content: space-between;
+  justify-content: center;
   background: #fff;
   box-shadow: 0 -1px 0 #e1e7ed;
   display: flex;
