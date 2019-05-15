@@ -55,9 +55,11 @@ footer {
   width: 100%;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
+  min-width: 1200px;
   line-height: 19px;
   height: 213px;
-  justify-content: center;
+  padding: 44px 25%;
+  justify-content: space-between;
   background: #fff;
   box-shadow: 0 -1px 0 #e1e7ed;
   display: flex;
