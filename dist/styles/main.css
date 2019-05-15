@@ -220,8 +220,10 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #3d4e61;
   font-weight: bold; }
+  .nav_containera {
+    text-decoration: none;
+    color: #3d4e61; }
 
 footer {
   -webkit-box-sizing: border-box;
@@ -244,6 +246,9 @@ footer {
   display: flex;
   color: #3d4e61;
   margin: 0; }
+  footera {
+    text-decoration: none;
+    color: #3d4e61; }
   footer ul {
     margin: 0;
     width: 175px;

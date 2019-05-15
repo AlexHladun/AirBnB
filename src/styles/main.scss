@@ -250,9 +250,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #3d4e61;
   font-weight: bold;
-  
+  &a {
+    text-decoration: none;
+    color: #3d4e61;
+  }
 }
 
 footer {
@@ -270,6 +272,11 @@ footer {
   display: flex;
   color: #3d4e61;
   margin: 0;
+
+  &a {
+    text-decoration: none;
+    color: #3d4e61;
+  }
 
   ul {
     margin: 0;
