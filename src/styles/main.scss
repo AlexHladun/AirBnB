@@ -12,6 +12,84 @@ body {
   flex-wrap: wrap;
 }
 
+nav {
+  box-sizing: border-box;
+  padding: 0 19px 0 26px;
+  display: flex;
+  font-family: "Avenir", sans-serif;
+  justify-content: space-between;
+  line-height: 19px;
+  font-size: 16px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 0 #e1e7ed;
+  height: 60px;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0;
+
+  img[alt="airbnb-logo"] {
+    @include img-size;
+  }
+
+  img[alt="headshot"] {
+    @include img-size;
+  }
+  
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 1200px;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  height: 213px;
+  padding: 44px 25%;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 -1px 0 #e1e7ed;
+  display: flex;
+  color: #3d4e61;
+  margin: 0;
+
+  .footer_links {
+    text-decoration: none;
+    color: #3d4e61;
+  }
+
+  ul {
+    margin: 0;
+    width: 175px;
+    list-style: none;
+    padding: 0;
+    gap: 9px;
+    
+    li:not(.footer_ul-first-item) {
+      margin-bottom: 9px;
+    }
+
+    .footer_ul-first-item {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.nav_container {
+  width: 373px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  
+  .nav_links {
+    text-decoration: none;
+    color: #3d4e61;
+  }
+}
+
 .kitchen img {
   width: 100%;
 }
@@ -215,83 +293,6 @@ main {
     a {
       color: #3d4e61;
       font-weight: bold;
-    }
-  }
-}
-
-nav {
-  box-sizing: border-box;
-  padding: 0 19px 0 26px;
-  display: flex;
-  font-family: "Avenir", sans-serif;
-  justify-content: space-between;
-  line-height: 19px;
-  font-size: 16px;
-  align-items: center;
-  background: #fff;
-  box-shadow: 0 1px 0 #e1e7ed;
-  height: 60px;
-  width: 100%;
-  min-width: 1200px;
-  margin: 0;
-
-  img[alt="airbnb-logo"] {
-    @include img-size;
-  }
-
-  img[alt="headshot"] {
-    @include img-size;
-  }
-  
-}
-
-.nav_container {
-  width: 373px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: bold;
-  &a {
-    text-decoration: none;
-    color: #3d4e61;
-  }
-}
-
-footer {
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 1200px;
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  height: 213px;
-  padding: 44px 25%;
-  justify-content: space-between;
-  background: #fff;
-  box-shadow: 0 -1px 0 #e1e7ed;
-  display: flex;
-  color: #3d4e61;
-  margin: 0;
-
-  &a {
-    text-decoration: none;
-    color: #3d4e61;
-  }
-
-  ul {
-    margin: 0;
-    width: 175px;
-    list-style: none;
-    padding: 0;
-    gap: 9px;
-    
-    li:not(.footer_ul-first-item) {
-      margin-bottom: 9px;
-    }
-
-    .footer_ul-first-item {
-      font-weight: bold;
-      margin-bottom: 20px;
     }
   }
 }
