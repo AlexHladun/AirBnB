@@ -1,4 +1,5 @@
 p,
+a,
 h1,
 h2,
 td,
@@ -6,6 +7,11 @@ span,
 .person_name,
 main .review_date {
   color: #3d4e61; }
+
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
 
 @font-face {
   font-family: "Roboto";
@@ -35,6 +41,7 @@ body {
       flex-wrap: wrap; }
 
 nav {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 19px 0 26px;
@@ -42,9 +49,9 @@ nav {
   display: -ms-flexbox;
   display: flex;
   font-family: "Avenir", sans-serif;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   line-height: 19px;
   font-size: 16px;
   -webkit-box-align: center;
@@ -55,50 +62,16 @@ nav {
           box-shadow: 0 1px 0 #e1e7ed;
   height: 60px;
   width: 100%;
-  min-width: 1200px;
   margin: 0; }
   nav img[alt="airbnb-logo"] {
     height: 30px;
-    width: 30px; }
+    width: 30px;
+    position: absolute;
+    left: 26px;
+    right: 200px; }
   nav img[alt="headshot"] {
     height: 30px;
     width: 30px; }
-
-footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  min-width: 1200px;
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  height: 213px;
-  padding: 44px 25%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #fff;
-  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
-          box-shadow: 0 -1px 0 #e1e7ed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #3d4e61;
-  margin: 0; }
-  footer .footer_links {
-    text-decoration: none;
-    color: #3d4e61; }
-  footer ul {
-    margin: 0;
-    width: 175px;
-    list-style: none;
-    padding: 0;
-    gap: 9px; }
-    footer ul li:not(.footer_ul-first-item) {
-      margin-bottom: 9px; }
-    footer ul .footer_ul-first-item {
-      font-weight: bold;
-      margin-bottom: 20px; }
 
 .nav_container {
   width: 373px;
@@ -111,17 +84,51 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #3d4e61;
   font-weight: bold; }
-  .nav_container .nav_links {
-    text-decoration: none;
-    color: #3d4e61; }
+
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  height: 213px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3d4e61;
+  margin: 0; }
+  footer ul {
+    margin: 0;
+    width: 175px;
+    list-style: none;
+    padding: 0;
+    gap: 9px; }
+    footer ul li:not(.footer_ul-first-item) {
+      margin-bottom: 9px; }
+    footer ul .footer_ul-first-item {
+      font-weight: bold;
+      margin-bottom: 20px; }
+
+.kitchen {
+  width: 100%; }
 
 .kitchen img {
-  width: 100%; }
+  width: 100%;
+  height: 464px;
+  min-width: 1000px; }
 
 main {
   display: grid;
-  grid-template: "desc form"    auto "amenities ."    auto "rev ."    auto "host ."    auto/auto auto;
+  grid-template: "desc form"    auto "amenities ."    auto "rev ."    auto "host ."    auto/auto auto;
   grid-gap: 0 80px;
   padding-top: 39px;
   font-family: "Avenir", sans-serif;
