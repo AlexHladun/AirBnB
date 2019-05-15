@@ -7,8 +7,80 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   flex-wrap: wrap;
+}
+
+nav {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 19px 0 26px;
+  display: flex;
+  font-family: "Avenir", sans-serif;
+  justify-content: flex-end;
+  line-height: 19px;
+  font-size: 16px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 0 #e1e7ed;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+
+  img[alt="airbnb-logo"] {
+    @include img-size;
+    position: absolute;
+    left: 26px;
+    right: 200px;
+  }
+
+  img[alt="headshot"] {
+    @include img-size;
+  }
+  
+}
+
+.nav_container {
+  width: 373px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3d4e61;
+  font-weight: bold;
+  
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  height: 213px;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 -1px 0 #e1e7ed;
+  display: flex;
+  color: #3d4e61;
+  margin: 0;
+
+  ul {
+    margin: 0;
+    width: 175px;
+    list-style: none;
+    padding: 0;
+    gap: 9px;
+    
+    li:not(.footer_ul-first-item) {
+      margin-bottom: 9px;
+    }
+
+    .footer_ul-first-item {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .kitchen img {
@@ -214,77 +286,6 @@ main {
     a {
       color: #3d4e61;
       font-weight: bold;
-    }
-  }
-}
-
-nav {
-  position: relative;
-  box-sizing: border-box;
-  padding: 0 19px 0 26px;
-  display: flex;
-  font-family: "Avenir", sans-serif;
-  justify-content: flex-end;
-  line-height: 19px;
-  font-size: 16px;
-  align-items: center;
-  background: #fff;
-  box-shadow: 0 1px 0 #e1e7ed;
-  height: 60px;
-  width: 100%;
-  margin: 0;
-
-  img[alt="airbnb-logo"] {
-    @include img-size;
-    position: absolute;
-    left: 26px;
-    right: 200px;
-  }
-
-  img[alt="headshot"] {
-    @include img-size;
-  }
-  
-}
-
-.nav_container {
-  width: 373px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #3d4e61;
-  font-weight: bold;
-  
-}
-
-footer {
-  box-sizing: border-box;
-  width: 100%;
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  height: 213px;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0 -1px 0 #e1e7ed;
-  display: flex;
-  color: #3d4e61;
-  margin: 0;
-
-  ul {
-    margin: 0;
-    width: 175px;
-    list-style: none;
-    padding: 0;
-    gap: 9px;
-    
-    li:not(.footer_ul-first-item) {
-      margin-bottom: 9px;
-    }
-
-    .footer_ul-first-item {
-      font-weight: bold;
-      margin-bottom: 20px;
     }
   }
 }
