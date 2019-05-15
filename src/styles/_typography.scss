@@ -1,4 +1,5 @@
 p,
+a,
 h1,
 h2,
 td,
@@ -6,4 +7,8 @@ span,
 .person_name,
 main .review_date {
   @extend %p;
+}
+
+a {
+  @extend %a;
 }

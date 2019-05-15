@@ -38,7 +38,6 @@ nav {
   img[alt="headshot"] {
     @include img-size;
   }
-  
 }
 
 .nav_container {
@@ -83,9 +82,14 @@ footer {
   }
 }
 
+.kitchen {
+  width: 100%;
+}
+
 .kitchen img {
-  width: 2000px;
+  width: 100%;
   height: 464px;
+  min-width: 1000px;
 }
 
 main {
